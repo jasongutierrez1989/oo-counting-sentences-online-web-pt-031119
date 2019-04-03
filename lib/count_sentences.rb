@@ -19,14 +19,14 @@ class String
     num = 0
     array = self.split(/[\.\!\?]/)
     while count < array.length
-      array.each |thing|
+      array.each { |thing|
       if thing.empty? != true
         count += 1
         num += 1
       else
         count += 1
       end
-    end
+    end}
     return num
   end
 end

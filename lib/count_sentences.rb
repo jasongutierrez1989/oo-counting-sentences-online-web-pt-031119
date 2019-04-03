@@ -15,6 +15,17 @@ class String
   end
 
   def count_sentences
-    self.split(/[\.\!\?\!!]/).count
+    count = 0
+    num = 0
+    array = self.split(/[\.\!\?]/)
+    while count < array.length
+      if array.empty? != true
+        count += 1
+        num += 1
+      else
+        count += 1
+      end
+    end
+    return num
   end
 end

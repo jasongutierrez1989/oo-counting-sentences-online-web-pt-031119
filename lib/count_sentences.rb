@@ -19,7 +19,8 @@ class String
     num = 0
     array = self.split(/[\.\!\?]/)
     while count < array.length
-      if array.empty? != true
+      array.each |thing|
+      if thing.empty? != true
         count += 1
         num += 1
       else

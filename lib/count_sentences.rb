@@ -25,8 +25,8 @@ class String
         num += 1
       else
         count += 1
-      end
-    end}
+      end}
+    end
     return num
   end
 end
